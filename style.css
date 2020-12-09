@@ -121,7 +121,7 @@ body, html{
 }
 
 .container2{
-    height: 2800px;
+    height: 2150px;
     background-color: black;
     padding-top: 100px;
 }
@@ -329,16 +329,164 @@ body, html{
 #blog4{
     background-image: url(blog4.jpg);
 }
+
 .container5{
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.973);
+    overflow: hidden;
+}
+/*contact us*/
+.contact-us{
+    width: 430px;
+    position: relative;
+    left: 10%;
+}
+.login-box{
+    position: relative;
+    animation: loginBoxAnim 2s 0.5s both;
+     
+}
+.inp{
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 45px;
+    width: 300px;
+    padding: 10px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-color: rgba(51, 51, 51, 0.212);
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.329) solid  ;
+    z-index: 33;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+#inp-label, #msg-label{
+    color: white;
+    position: relative;
+    top: 0px;
+    left: -293px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 16px;
+    opacity: 50%;
+    z-index: 0;
+    transition: 0.5s;
+}
+#msg-label{
+    top: -50px;
+    left: -293px;
+}
+.inp:focus{
+    transition: 1s;
+    outline: none;
+    border-bottom:  rgb(0, 47, 255) solid  ;
+}
+.inp:focus + #inp-label, .inp:valid + #inp-label{
+    transition: 0.5s;
+    opacity: 100%;
+    top: -31px;
+    font-size: 13px;
+    color:  rgb(0, 47, 255);
+}
+
+.inp:focus + #msg-label, .inp:valid + #msg-label{
+    transition: 0.5s;
+    opacity: 100%;
+    top: -100px;
+    font-size: 13px;
+    color:  rgb(0, 47, 255);
+}
+
+.botton{
+    height: 35px;
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: rgba(255, 255, 255, 0.849);
+    margin-top: 0px;
+    font-family: 'Spartan', sans-serif;
+    transition: 0.5s;
+}
+.botton:focus{
+    background-color:rgb(0, 204, 255) ;
+    color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 100);
+    outline: none;
+    animation: color 1s forwards;
+    box-shadow: blue -3px -3px 20px inset;
+}
+
+/*Social Media*/
+.social{
+    display: inline-flex;
+    position: relative;
+    top: -785px;
+    left: 81%;
+    animation: name2 2.5s 1s;
+    animation-fill-mode: both;
+}
+.social-list{
+    list-style: none;
+    position: relative;
+    top: 0px;
+    
+}
+.gmail, .github,.linkedin,.instagram, .facebook{
+  background-color: rgb(80, 80, 80);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: 0px;
+  margin: 10px;
+  padding: 0;
+  transition: all .5s;
+  outline: none;
+  color: whitesmoke;
+}
+#phone{
+    transform: rotate(-30deg);
+}
+.gmail:focus,.github:focus,.linkedin:focus,.instagram:focus, .facebook:focus{
+  outline: none;
+}
+.gmail:hover{
+  background-color: #B23121;
+  animation: social-jump 0.7s;
+}
+.github:hover{
+  background-color: black;
+  animation: social-jump 0.7s;
+}
+.linkedin:hover{
+  background-color: #0077b5;
+  animation: social-jump 0.7s;
+}
+.instagram:hover{
+  background-color: #C13584;
+  animation: social-jump 0.7s;
+}
+.facebook:hover{
+  background-color: #3b5998; 
+  animation: social-jump 0.7s;
+}
+
+
+/*Copyright*/
+.container6{
     height: 25px;
     width: 100%;
     display: block;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.973);;
     text-align: right;
     padding-right: 20px;
     color: grey;
     font-size: smaller;
 }
+
 
 /**Members Slide*/
 .hi-slide { 
@@ -437,5 +585,25 @@ background-position: center;
 @keyframes head22{
     100%{
         opacity: 100%;
+    }
+}
+@keyframes social-jump{
+    16%{
+        transform: translateY(-6px);
+    }
+    32%{
+        transform: translateY(0px);
+    }
+    48%{
+        transform: translateY(-4px);
+    }
+    64%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-2px);
+    }
+    96%{
+        transform: translateY(0px);
     }
 }
