@@ -400,6 +400,7 @@ body, html{
     width: 430px;
     position: relative;
     left: 10%;
+    top: 7px;
 }
 .login-box{
     position: relative;
@@ -484,7 +485,7 @@ body, html{
 .social{
     display: inline-flex;
     position: relative;
-    top: -785px;
+    top: -735px;
     left: 81%;
     animation: name2 2.5s 1s;
     animation-fill-mode: both;
@@ -501,7 +502,7 @@ body, html{
   width: 50px;
   border-radius: 50%;
   border-width: 0px;
-  margin: 10px;
+  margin: 15px;
   padding: 0;
   transition: all .5s;
   outline: none;
