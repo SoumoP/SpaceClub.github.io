@@ -24,19 +24,79 @@ body, html{
     padding-right: 100px;
     transition: 1s;
 }
-.nav-link{
+.nav-link, .dropbtn{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 800;
     font-size: 15px;
+    cursor: pointer;
+    margin-top: -6px;
+    
 }
-.nav-link:hover{
+.nav-link:hover, .dropbtn:hover{
     transform-origin: center;
     color: rgb(21,96,189);
     transition: all 0.3s;
+    text-decoration: none;
 }
+.dropbtn{
+    padding-top: -5px;
+    position: relative;
+    user-select: none;
+}
+/**Dropdown*/
+.dropdown-content {
+    user-select: none;
+    transition: 0.5s;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    background-image: linear-gradient(rgb(8, 6, 37), black);
+    width: 759px;
+    height: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 21;
+    border-radius: 15px;
+    display: none;
+    opacity: 0;
+  }
+  .show {
+      opacity: 1;
+      display:block;
+      transition: 1s;
+    }
+.mem{
+    text-align: center;
+    position: relative;
+     top: 10px;
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;  
+}
+.name, .name2{
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    position: relative;
+     top: 15px;
+     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+}
+.name2{
+    font-family: 'Work Sans', sans-serif;    
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+
 #nav-container, #nav-container:hover, #nav-container:focus{
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0));
 }
@@ -270,7 +330,7 @@ body, html{
     left: 0;
 }
 .parallax2{
-    background-image: url(5.jpg);
+    background-image: url(7.jpg);
 }
 .parallax3{
     background-image: url(7.jpg);
@@ -486,80 +546,6 @@ body, html{
     color: grey;
     font-size: smaller;
 }
-
-
-/**Members Slide*/
-.hi-slide { 
-    position: relative; width: 754px; height: 292px; margin: 115px auto 0; }
-  
-  .hi-slide .hi-next, .hi-slide .hi-prev
-    { 
-      position: absolute;
-      top: 50%; 
-      width: 40px;
-      height: 40px; 
-      margin-top: -20px;     
-        border-radius: 50px;    
-      line-height: 40px;
-      text-align: center; 
-      cursor: pointer;
-      background-color: #fff; 
-      color: black;               
-      transition: all 0.6s;
-      font-size: 20px; 
-        font-weight: bold;
-  }
- .hi-slide .hi-next:hover, 
-  .hi-slide .hi-prev:hover 
-  {
-    opacity: 1; 
-    background-color: #fff;  
-  }
-  
- .hi-slide .hi-prev { left: -60px; }
-  
-.hi-slide .hi-prev::before 
-{ content: '<'; 
-}
-.hi-slide .hi-next { 
-    right: -60px; 
-}
-.hi-slide .hi-next::before { 
-    content: '>'; 
-}
-
-  .hi-slide > ul
-          { 
-              list-style: none; 
-              position: relative;
-              width: 754px; 
-              height: 292px; 
-              margin: 0;
-              padding: 0;
-  }
-  
-  
-.hi-slide > ul > li {
-  overflow: hidden; 
-  position: absolute; 
-  z-index: 0; 
-  left: 377px;
-  top: 146px; 
-  width: 0; 
-  height: 0; 
-  margin: 0; 
-  padding: 0;
-  border: 3px solid #fff;              
-  background-color: #333; 
-  cursor: pointer; }
-  
-.hi-slide > ul > li > img { 
-width: 100%; 
-height: 100%; 
-background-position: center;
-}
-
-
 
 @keyframes head11{
     0%{
