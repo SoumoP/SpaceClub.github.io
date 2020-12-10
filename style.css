@@ -701,10 +701,14 @@ body, html{
     #img01{
         width: 250px;
     }
-    iframe{
+    #videoiframe{
         width: 150%;
         height: 210px;
-        top: 5050px;
+
+    }
+    #mapiframe{
+        width: 60%;
+        height: 230px;
     }
     .container2{
         height: 3800px;
