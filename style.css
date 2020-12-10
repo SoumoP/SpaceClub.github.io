@@ -721,7 +721,7 @@ body, html{
         top: 4600px;
     }
     .container5{
-        height: 700px;
+        height: 650px;
     }
     .map{
         top: 40px;
@@ -731,5 +731,11 @@ body, html{
     .dropdown-content{
         top: 100px;
         width: 350px;
+    }
+    .social{
+        left: 70%;
+    }
+    .contact-us{
+        left: 5%;
     }
 }
