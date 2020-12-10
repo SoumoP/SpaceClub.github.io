@@ -27,14 +27,14 @@ window.onclick = function(event) {
 
 $(function () {
   $(window).on('scroll', function () {
-      if ( $(window).scrollTop() != 0 && $(window).scrollTop() > 200 ) {
+      if ($(window).width() > 600 && $(window).scrollTop() > 200 ) {
         $('.heading1').removeClass('active12');  
         $('.heading1').addClass('active11');
         $('.heading2').removeClass('active22');  
         $('.heading2').addClass('active21');
         $('#nav-container').css('background','black');
       } 
-      if ( $(window).scrollTop() < 200 ) {
+      if ( $(window).width() > 600 && $(window).scrollTop() < 200 ) {
           $('.heading1').addClass('active12');
           $('.heading2').addClass('active22');
           $('#nav-container').css('background','rgba(255, 255, 255, 0)');
