@@ -270,7 +270,7 @@ body, html{
     margin-bottom: 5px;
     z-index: 10;
     position: relative;
-    top: 40px;
+    top: 20px;
 }
 #product-heading3{
     color: white;
@@ -702,12 +702,15 @@ body, html{
         width: 250px;
     }
     iframe{
-        width: 370px;
+        width: 150%;
         height: 210px;
         top: 5050px;
     }
     .container2{
-        height: 3650px;
+        height: 3800px;
+    }
+    #product-heading2{
+        top: 60px ;
     }
     #product-heading3{
         top: 300px;
@@ -717,8 +720,11 @@ body, html{
         top: 300px;
         width: 300px;
     }
+    #divide2{
+        top: 55px;
+    }
     #video{
-        top: 4600px;
+        top: 4800px;
     }
     .container5{
         height: 650px;
