@@ -707,7 +707,7 @@ body, html{
         top: 5050px;
     }
     .container2{
-        height: 3600px;
+        height: 3650px;
     }
     #product-heading3{
         top: 300px;
@@ -727,5 +727,9 @@ body, html{
         top: 40px;
         left: 50%;
         transform: translateX(-30%);
+    }
+    .dropdown-content{
+        top: 100px;
+        width: 350px;
     }
 }
