@@ -1,10 +1,8 @@
 body, html{
     scroll-behavior: smooth;
     margin: 0;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
 }
-
 #nav-container{
     position: fixed;
     top: 0;
@@ -16,7 +14,6 @@ body, html{
 .navbar{
     padding-left: 0px;
     height: 80px;
-
 }
 .navbar-nav{
     position: absolute;
@@ -669,10 +666,10 @@ body, html{
         font-size: smaller;
     }
     #text1{
-        top: 250px;
+        top: 0px;
     }
     #text2{
-        top: 330px;
+        top: 250px;
         width: 80%;
     }
     #text3{
@@ -685,8 +682,8 @@ body, html{
         top: 280px;font-size: 1em;
     }
     #img1{
-        position: absolute;
-        top: 950px;
+        position: relative;
+         top: 00px;
         left: 50%;
         transform: translateX(-50%);
         right: 0px;
@@ -696,7 +693,7 @@ body, html{
     }
     #img2{
         width: 100px;
-        top: 280px;
+        top: 200px;
     }
     #img01{
         width: 250px;
