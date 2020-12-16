@@ -13,8 +13,8 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   else{
-    document.getElementById("myDropdown2").style= 'animation: mem-anim-1 0.5s forwards;';
-    document.getElementById("myDropdown2").classList.toggle("show");
+    document.getElementById("myDropdown2").style= 'animation: mem-anim-1 0.5s both;';
+    
     
   }
 }
@@ -27,8 +27,9 @@ function myFunction3() {
   document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
 }
 function myFunction4() {
-  document.getElementById("myDropdown2").style= 'animation: mem-anim-2 0.5s forwards;';
+  document.getElementById("myDropdown2").style= 'animation: mem-anim-2 0.5s both;';
   document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
+  
 }
 
 
