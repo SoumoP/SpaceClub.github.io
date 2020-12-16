@@ -1,5 +1,17 @@
 function scrollWin(a) {
+  if ($(window).width() > 600){
     window.scrollTo(0, a*700);
+  }
+  else{
+    document.getElementById("nav-container").style= 'animation: nav-anim2 0.5s both;';
+    document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
+    if(a==4.1){
+      window.scrollTo(0, a*700+1800);
+    }
+    else{
+      window.scrollTo(0, a*700);
+    }
+  }
 }
 function logoTrigger(){
   var a=document.getElementById("full-page");
