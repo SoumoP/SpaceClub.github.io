@@ -19,12 +19,12 @@
     
 </head>
 <body>
-    <div id="full-page" style="overflow-x: hidden;">
+    <div id="full-page" style="overflow-x: hidden; ">
     <div class="container-fluid" id="nav-container">
         <nav class="navbar navbar-expand-sm" style="width: 100%; padding-left: 40px; padding-right: 50px;">
             
             <a class="navbar-brand" href="#">
-                <img src="logo1.png" alt="logo" style="width:60px;">
+                <img id="navbar-brand-logo" src="logo1.png" alt="logo" style="width:60px;">
             </a>
             <ul class="navbar-nav">              
                 <li class="nav-item">
@@ -40,10 +40,22 @@
                 <li class="nav-item">
                     <a onclick="myFunction()" class="dropbtn">MEMBERS</a>
                 </li> 
-
-                
+                <li class="nav-item" >
+                    <a onclick="myFunction3()" class="close-nav">
+                        <i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="color: white; padding-top: 10px;"></i>
+                    </a>
+                </li>
             </ul>
+            
         </nav>
+    </div>
+    <div id="alt-nav">
+        <a class="alt-navbar-brand" href="#">
+            <img id="alt-navbar-brand-logo" src="logo1.png" alt="logo" >
+        </a>
+        <a onclick="myFunction2()" class="toggle-nav">
+            <i id="nav-exp" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
     </div>
     <div id="myDropdown" class="dropdown-content">
         <div class="mem"><img src="mem1.jpeg" style="height: 200px; border-radius: 15px;" alt=""></div>
@@ -56,6 +68,22 @@
         <div class="name2">Founding Member</div>
         <div class="name2">Founding Member</div>
    </div>
+   <div id="myDropdown2" class="dropdown-content2">
+    <div class="mem"><img src="mem1.jpeg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Shaun</div>
+    <div class="name2">Co-founder</div>
+    <div class="mem"><img src="mem2.jpeg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Neel</div>
+    <div class="name2">Founding Member</div>
+    <div class="mem"><img src="mem3.jpeg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Pranoy</div>
+    <div class="name2">Founding Member</div>
+    <div class="name2">
+        <a onclick="myFunction4()" class="close-nav">
+            <i class="fa fa-times fa-2x" aria-hidden="true" style="color: white; padding-top: 10px;"></i>
+        </a>
+    </div>
+</div>
    <div id="video" ><iframe id= "videoiframe" style="position: relative; top: 30px; left: 50%; transform: translateX(-50%); z-index: 20;" width="560" height="315" src="https://www.youtube.com/embed/9BbA31noPME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     <div class="container0"> 
         
@@ -77,7 +105,7 @@
                     <li>We are attempting to create a platform which encourages curiosity, innovation and wisdom.</li>
                     <li>We shall promote interdisciplinary research projects among students relevant to space sciences and technology, attracting talents across many engineering disciplines such as mechanical engineering, computer science engineering, chemical engineering, electrical engineering, electronics engineering and those who pursue Physics, Mathematics.</li>
                     <li>We hope that most of our planned events shall be public events open to nearly everyone without boundaries.</li>
-                    <li>We shall organize talks, visits and summer and/winter research internships. We shall award the best pre final year and final year research projects from each department.</li>
+                    <li>We shall organize talks, visits and summer and/winter research internships.</li>
                     <li>We dream to transform ourselves into a society running a publishing house managed by the undergraduates and which shall recognize the scholarly prowess of undergraduates.</li>
                 </ul>
                 <br><br>
@@ -105,7 +133,7 @@
             
             <ul style="font-family: 'Work Sans', sans-serif; color: white; width: 70%; position: relative; top: -450px; left: 50%;transform: translateX(-50%); font-weight: 300; font-size: 20px;color: white;  font-size: 1.2em;">
                 <li>Natural Sciences: Radiophysics, Astronomy, Astrophysics, Atmospheric Sciences, Geoscience, Physics, Mathematics.</li>
-                <li>Technical fields: Scientific computing; Aerospace and Rocketry; Avionics; Instrumentation; Signal Processing; Remote Sensing & Satellite Communication; Novel material design; Non-conventional Energy Sources.</li>
+                <li>Technical fields: Scientific computing; Aerospace and Rocketry; Avionics; Instrumentation; Signal Processing; Remote Sensing & Satellite Communication; Satellite System Engineering; Novel material design; Non-conventional Energy Sources.</li>
                 <li>Humanities: Philosophy, Creative arts.</li>
             </ul>
             <p id="about-text" style="color: white; width: 70%; position: relative; top: -450px; left: 50%;transform: translateX(-50%); font-size: 1.2em;">    
@@ -139,7 +167,7 @@
                     
 
 
-                <!--    <div id="demo" class="carousel" style="position: relative; top: 20px;">
+                    <!--<div id="demo" class="carousel" style="position: relative; top: 20px;">
                         <ul class="carousel-indicators">
                             <li data-target="#demo" data-slide-to="0" class="active"></li>
                             <li data-target="#demo" data-slide-to="1"></li>
@@ -261,10 +289,22 @@
 <script>
     $(function () {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 250 ) {
-            $('.container-fluid').addClass('active');
-        } else {
-            $('.container-fluid').removeClass('active');
+        if (  $(window).width() > 600 )
+        {
+            if ( $(window).scrollTop() > 250 ) {
+                $('.container-fluid').addClass('active');
+            }
+            else {
+                $('.container-fluid').removeClass('active');
+            }
+        }
+        else
+        {
+            if ($(window).scrollTop() > 10 ) {
+                $('.container-fluid').addClass('active');
+            } else {
+                $('.container-fluid').removeClass('active');
+            }
         }
     });
 });

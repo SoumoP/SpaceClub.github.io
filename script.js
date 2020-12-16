@@ -8,11 +8,33 @@ function logoTrigger(){
   document.getElementById("result").innerHTML = "Horizontally: " + x + "px.";
 }
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("nav-container").style= 'animation: nav-anim2 0.5s both;';
+  if ($(window).width() > 600){
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  else{
+    document.getElementById("myDropdown2").style= 'animation: mem-anim-1 0.5s forwards;';
+    document.getElementById("myDropdown2").classList.toggle("show");
+    
+  }
 }
+function myFunction2() {
+  document.getElementById("nav-container").style= 'animation: nav-anim1 0.5s both;';
+  document.getElementById("alt-nav").style= 'animation: alt-nav-anim1 0.5s both;';
+}
+function myFunction3() {
+  document.getElementById("nav-container").style= 'animation: nav-anim2 0.5s both;';
+  document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
+}
+function myFunction4() {
+  document.getElementById("myDropdown2").style= 'animation: mem-anim-2 0.5s forwards;';
+  document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
+}
+
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
+   
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -24,6 +46,7 @@ window.onclick = function(event) {
     }
   }
 }
+ 
 
 $(function () {
   $(window).on('scroll', function () {
@@ -40,5 +63,12 @@ $(function () {
           $('#nav-container').css('background','rgba(255, 255, 255, 0)');
           $('#nav-container').css('background-image','linear-gradient(black, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0))');
       }
+      /*if ($(window).width() < 600 && $(window).scrollTop() > 150 ) {
+          $('#nav-container').css('background','black');
+      } 
+      if ( $(window).width() < 600 && $(window).scrollTop() < 150 ) {
+         $('#nav-container').css('background','rgba(255, 255, 255, 0)');
+         $('#nav-container').css('background-image','linear-gradient(black, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0))');
+      }*/
   });
 });
