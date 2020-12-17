@@ -837,7 +837,14 @@ body, html{
 }
 
 /*MEDIA QUERIES*/
-
+@media screen and (max-width: 367px) {
+    .container2{
+        height: 6900px;    
+    }
+    .heading1{
+        top: 220px;
+    }
+}
 @media screen and (max-width: 750px) {
     .body{
         overflow-x: hidden;
@@ -924,8 +931,9 @@ body, html{
         width: 60%;
         height: 230px;
     }
+    
     .container2{
-        height: 4100px;
+        height: 4100px;  
     }
     #product-heading2{
         top: 60px ;
