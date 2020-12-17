@@ -22,12 +22,12 @@
             if (document.readyState !== "complete") { 
                 document.querySelector("#full-page").style.visibility = "hidden"; 
                 document.querySelector("#loader").style.visibility = "visible"; 
-                document.querySelector("#full-page").style.overflowY = "hidden";
+                
                  
             } else { 
                 document.querySelector("#loader").style.display = "none"; 
                 document.querySelector("#full-page").style.visibility = "visible"; 
-                document.querySelector("#full-page").style.overflowY = "scroll"; 
+                 
                  
             } 
         };   </script>
@@ -38,7 +38,17 @@
         <div id="circle2"></div>  
         <div id="circle3"></div> 
         <div id="circle4"></div>   
-        <div id="circle5"></div>        
+        <div id="circle5"></div>  
+        <ul id="dot-list">
+                <li id="loader-li"><h3 class="dotz" id="dot1">L</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot2">O</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot3">A</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot4">D</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot5">I</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot6">N</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot7">G</h3></li>
+        </ul>
+             
     </div>
     <div id="full-page" style="overflow-x: hidden; ">
     <div class="container-fluid" id="nav-container">

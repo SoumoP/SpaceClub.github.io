@@ -891,10 +891,8 @@ body, html{
         }
     }
     
-    
+ /*Loader*/   
 }
-
-/*Loader*/
 #loader{
     position: fixed;
     top: 0;
@@ -903,12 +901,90 @@ body, html{
     width: 100%;
     background-color: black;
     z-index: 25;
-    overflow: hidden;
 }
+.loader-wrap{
+    height: auto;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: yellow;
+}
+
+#dot-list{
+    text-align: center;
+    height: 100px;
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+}
+#loader-li
+{
+    float: left;
+}
+.dotz{
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+     
+    font-size: 15px;
+    font-weight: bold;
+}
+#dot1{
+    animation: jump 0.5s 0s infinite;
+}
+#dot2{  
+    animation: jump 0.5s 0.1s infinite;
+}
+#dot3{
+    animation: jump 0.5s 0.2s infinite;
+}
+#dot4{
+    animation: jump 0.5s 0.3s infinite;
+}
+#dot5{
+    animation: jump 0.5s 0.4s infinite;
+}
+#dot6{
+    animation: jump 0.5s 0.5s infinite;
+}
+#dot7{
+    animation: jump 0.5s 0.6s infinite;
+}
+
+@keyframes jump{
+    25%{
+        transform: translatey(-10px);
+    }
+    50%{
+        transform: translatey(0px);
+    }
+    75%{
+        transform: translatey(10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+
+
+/*Circle*/
+
 #circle1{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 50%; 
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -919,7 +995,7 @@ body, html{
 }
 #circle2{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 100px;
     width: 100px;
@@ -931,7 +1007,7 @@ body, html{
 }
 #circle3{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 100px;
     width: 100px;
@@ -943,7 +1019,7 @@ body, html{
 }
 #circle5{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 100px;
     width: 100px;
@@ -955,7 +1031,7 @@ body, html{
 }
 #circle5{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 100px;
     width: 100px;
