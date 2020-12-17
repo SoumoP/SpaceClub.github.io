@@ -216,7 +216,7 @@ body, html{
     height: 2230px;
     margin: 0px;
 }
-#about-text, #about-text2{
+#about-text, #about-text2, #about-text3, #about-text4{
     font-family: 'Work Sans', sans-serif;    
     color: white;
     font-weight: 300;
@@ -677,222 +677,7 @@ body, html{
     }
 }
 
-@media screen and (max-width: 600px) {
-    .body{
-        overflow-x: hidden;
-    }
-    .container1{
-        height: 800px;
-    }
-    .heading1{
-        width: 100%;
-        font-size:30px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 30px;
-        animation: none;
-        text-align: center;
-        pointer-events: none;
-        z-index: 10;
-    }
-    .heading2{
-        
-        font-size: 17px;
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 35px;
-        text-align: center;
-    }
-    #about-text{
-        width: 100%;
-        left: 0px;
-
-        
-    }
-    #text1, #text2, #text3{
-        margin: 0px;
-        padding: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        right: 0px;
-        width: 85%;
-        font-size: smaller;
-    }
-    #text1{
-        top: 0px;
-    }
-    #text2{
-        top: 200px;
-        width: 80%;
-    }
-    #text3{
-        width: 90%;
-        top: 700px;
-    }
-    #about-text2{
-        width: 70%;
-        padding: 0;
-        top: 230px;font-size: 1em;
-    }
-    #img1{
-        position: relative;
-         top: 00px;
-        left: 50%;
-        transform: translateX(-50%);
-        right: 0px;
-        width: 250px;
-        padding: 0px;
-        margin: 0px;
-    }
-    #img2{
-        left: 50%;
-        transform: translateX(-50%);
-        width: 300px;
-        top: 130px;
-    }
-    #img01{
-        width: 250px;
-    }
-    #videoiframe{
-        width: 150%;
-        height: 210px;
-
-    }
-    #mapiframe{
-        width: 60%;
-        height: 230px;
-    }
-    .container2{
-        height: 4100px;
-    }
-    #product-heading2{
-        top: 60px ;
-    }
-    #product-heading3{
-        top: 230px;
-        font-size: 20px;
-    }
-    #divide4{
-        top: 230px;
-        width: 300px;
-    }
-    #divide2{
-        top: 55px;
-    }
-    #video{
-        top: 5200px;
-    }
-    .container5{
-        height: 650px;
-    }
-    .map{
-        top: 40px;
-        left: 50%;
-        transform: translateX(-30%);
-    }
-     
-    .social{
-        left: 70%;
-    }
-    .contact-us{
-        left: 5%;
-    }
-    #alt-nav{
-        position: fixed;
-        z-index: 90;
-        display: block;
-        height: 80px;
-        width: 100%;
-        z-index: 20;
-        padding-top: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0));
-        animation: alt-nav-anim2 0.5s both;
-    }
-    #alt-navbar-brand, #alt-navbar-brand-logo{
-        left: 40px;
-        width: 60px;
-    }
-    #nav-exp{
-        float: right;
-        padding-top: 15px;
-        color: white;
-    }
-    .toggle-nav{
-        float: right;    
-    }
-    #nav-container{
-        height: 230px;
-        background-color: black;
-        border-radius: 0px 0px 50px 50px;
-        padding-top: 80px;
-        text-align: center;
-        position: fixed;
-        top: -250px;
-        /*animation: nav-anim1 0.5s both;*/
-    }
-    .nav-link, .dropbtn{
-        font-size: 17px;
-        text-align: center;
-    }
-    #nav-cross{
-        display: block;
-        padding-top: 10px;
-    }
-    #navbar-brand-logo, .navbar-brand{
-        display: none;
-    }
-    
-    .navbar-nav{
-        padding: 0px;
-        text-align: center;
-        right: 50%;
-        transform: translateX(50%);
-    }
-    .mem{
-        height: 120px;
-        top: 15px;
-    }
-    .dropdown-content2 {
-        display: block;
-    }
-    
-
-
-
-    @keyframes nav-anim1 {
-        100%{
-            transform: translateY(250px);
-        }
-    }
-    @keyframes nav-anim2 {
-        0%{
-            transform: translateY(250px);
-        }
-        100%{
-            transform: translateY(-0px);
-        }
-    }
-    @keyframes alt-nav-anim1 {
-        100%{
-            transform: translateY(-80px);
-        }
-    }
-    @keyframes alt-nav-anim2 {
-        0%{
-            transform: translateY(-80px);
-        }
-        100%{
-            transform: translateY(0px);
-        }
-    }
-    
- /*Loader*/   
-}
+/*Loader*/ 
 #loader{
     position: fixed;
     top: 0;
@@ -1050,3 +835,380 @@ body, html{
         opacity: 0%;
     }
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 750px) {
+    .body{
+        overflow-x: hidden;
+    }
+    .container1{
+        height: 800px;
+    }
+    .heading1{
+        width: 100%;
+        font-size:30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        animation: none;
+        text-align: center;
+        pointer-events: none;
+        z-index: 10;
+    }
+    .heading2{
+        
+        font-size: 17px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 35px;
+        text-align: center;
+    }
+    #about-text{
+        width: 100%;
+        left: 0px;    
+    }
+    #text1, #text2, #text3{
+        margin: 0px;
+        padding: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0px;
+        width: 85%;
+        font-size: smaller;
+    }
+    #text1{
+        top: 0px;
+    }
+    #text2{
+        top: 200px;
+        width: 80%;
+    }
+    #text3{
+        width: 90%;
+        top: 700px;
+    }
+    #about-text2{
+        width: 70%;
+        padding: 0;
+        top: 230px;font-size: 1em;
+    }
+    #img1{
+        position: relative;
+         top: 00px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0px;
+        width: 250px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #img2{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        top: 130px;
+    }
+    #img01{
+        width: 250px;
+    }
+    #videoiframe{
+        width: 150%;
+        height: 210px;
+
+    }
+    #mapiframe{
+        width: 60%;
+        height: 230px;
+    }
+    .container2{
+        height: 4100px;
+    }
+    #product-heading2{
+        top: 60px ;
+    }
+    #product-heading3{
+        top: 230px;
+        font-size: 20px;
+    }
+    #divide4{
+        top: 230px;
+        width: 300px;
+    }
+    #divide2{
+        top: 55px;
+    }
+    #video{
+        top: 5200px;
+    }
+    .container5{
+        height: 650px;
+    }
+    .map{
+        top: 40px;
+        left: 50%;
+        transform: translateX(-30%);
+    }
+     
+    .social{
+        left: 70%;
+    }
+    .contact-us{
+        left: 5%;
+    }
+  
+    .inp{
+        width: 270px;
+    }
+    #inp-label, #msg-label{
+        left: -263px;
+    }
+    #alt-nav{
+        position: fixed;
+        z-index: 90;
+        display: block;
+        height: 80px;
+        width: 100%;
+        z-index: 20;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0));
+        animation: alt-nav-anim2 0.5s both;
+    }
+    #alt-navbar-brand, #alt-navbar-brand-logo{
+        left: 40px;
+        width: 60px;
+    }
+    #nav-exp{
+        float: right;
+        padding-top: 15px;
+        color: white;
+    }
+    .toggle-nav{
+        float: right;    
+    }
+    #nav-container{
+        height: 230px;
+        background-color: black;
+        border-radius: 0px 0px 50px 50px;
+        padding-top: 80px;
+        text-align: center;
+        position: fixed;
+        top: -250px;
+        /*animation: nav-anim1 0.5s both;*/
+    }
+    .nav-link, .dropbtn{
+        font-size: 17px;
+        text-align: center;
+    }
+    #nav-cross{
+        display: block;
+        padding-top: 10px;
+    }
+    #navbar-brand-logo, .navbar-brand{
+        display: none;
+    }
+    
+    .navbar-nav{
+        padding: 0px;
+        text-align: center;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .mem{
+        height: 120px;
+        top: 15px;
+    }
+    .dropdown-content2 {
+        display: block;
+    }
+    @keyframes nav-anim1 {
+        100%{
+            transform: translateY(250px);
+        }
+    }
+    @keyframes nav-anim2 {
+        0%{
+            transform: translateY(250px);
+        }
+        100%{
+            transform: translateY(-0px);
+        }
+    }
+    @keyframes alt-nav-anim1 {
+        100%{
+            transform: translateY(-80px);
+        }
+    }
+    @keyframes alt-nav-anim2 {
+        0%{
+            transform: translateY(-80px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    
+   
+}
+
+
+@media screen and (max-width: 1450px) {
+    @media screen and (min-width: 1210px) {
+    
+        @keyframes head11{
+            0%{
+                transform: translate(-50%,-200px)
+            }
+            100%{
+                transform: translate(-70%,-294px) scale(0.4);
+                transform-origin: center;
+                
+            }
+        }
+        @keyframes head12{
+            100%{
+                transform: translate(-50%,-200px), scale(1);
+                transform-origin: center;    
+            }
+        }
+    }
+}
+    @media screen and (max-width: 1210px) {
+        @media screen and (min-width: 1130px) {
+            .heading1{
+                width: 100%;
+                font-size:50px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding-top: 20px;
+                animation: none;
+                text-align: center;
+                pointer-events: none;
+                z-index: 10;
+            }
+            .heading2{
+                
+                font-size: 20px;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0px;
+                text-align: center;
+            }
+            #tex1, #text2, #text3{
+                font: smaller;
+            }
+            #about-text{
+                padding-left: 100px;
+            }
+            #img02, #img01{
+                width: 250px;
+            }
+            #img2{
+                top: -250px;
+            }
+            .container2{
+                height: 2600px;
+            }
+            #video{
+                top: 3550px;
+            }
+            .social{
+                left: 85%;
+            }
+            #mapiframe{
+                height: 60%;
+                width: 70%;
+            }
+            .map{
+                top: -80%;
+                left: 50%;
+                transform: translate(-15%);
+            }
+            @keyframes head11{
+                0%{
+                    transform: translate(-50%,-200px)
+                }
+                100%{
+                    transform: translate(-73%,-294px) scale(0.4);
+                    transform-origin: center;
+                    
+                }
+            }
+            @keyframes head12{
+                100%{
+                    transform: translate(-50%,-200px), scale(1);
+                    transform-origin: center;    
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1130px) {
+        @media screen and (min-width: 750px) {
+            .heading1{
+                width: 100%;
+                font-size:30px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding-top: 20px;
+                animation: none;
+                text-align: center;
+                pointer-events: none;
+                z-index: 10;
+            }
+            .heading2{
+                font-size: 15px;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0px;
+                text-align: center;
+                top: 360px;
+            }
+             
+
+            #about-text{
+                padding-left: 100px;
+            }
+            #img02, #img01{
+                width: 250px;
+            }
+            #img2{
+                top: -250px;
+            }
+            .container2{
+                height: 3300px;
+            }
+            #video{
+                top: 4250px;
+            }
+            .container5{
+                height: 650px;
+            }
+            .map{
+                top: 40px;
+                left: 50%;
+                transform: translateX(-30%);
+            }
+            #mapiframe{
+                width: 80%;
+                height: 230px;
+            }
+            .social{
+                left: 70%;
+            }
+            .contact-us{
+                left: 5%;
+            }
+            
+        }
+    }
