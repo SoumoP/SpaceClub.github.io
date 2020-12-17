@@ -829,6 +829,7 @@ body, html{
     }
     #nav-cross{
         display: block;
+        padding-top: 10px;
     }
     #navbar-brand-logo, .navbar-brand{
         display: none;
