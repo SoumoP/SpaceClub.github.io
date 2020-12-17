@@ -6,7 +6,7 @@ function scrollWin(a) {
     document.getElementById("nav-container").style= 'animation: nav-anim2 0.5s both;';
     document.getElementById("alt-nav").style= 'animation: alt-nav-anim2 0.5s both;';
     if(a==4.1){
-      window.scrollTo(0, a*700+1800);
+      window.scrollTo(0, a*700+2000);
     }
     else{
       window.scrollTo(0, a*700);
