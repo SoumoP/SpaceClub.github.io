@@ -16,9 +16,27 @@
     <script src="script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <script>
+         
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector("body").style.visibility = "hidden"; 
+                document.querySelector("#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector("#loader").style.display = "none"; 
+                document.querySelector("body").style.visibility = "visible"; 
+            } 
+        }; 
+    </script>
 </head>
 <body>
+    <div id="loader">
+        <div id="circle1"></div>
+        <div id="circle2"></div>  
+        <div id="circle3"></div> 
+        <div id="circle4"></div>   
+        <div id="circle5"></div>        
+    </div>
     <div id="full-page" style="overflow-x: hidden; ">
     <div class="container-fluid" id="nav-container">
         <nav class="navbar navbar-expand-sm" style="width: 100%; padding-left: 40px; padding-right: 50px;">

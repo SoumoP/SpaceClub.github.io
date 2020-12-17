@@ -368,11 +368,23 @@ body, html{
     display: block;
     height: 700px;
 }
-.parallax2, .parallax3{
+.parallax2{
     margin: 0;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.parallax3{
+    margin: 0;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -880,4 +892,84 @@ body, html{
     }
     
     
+}
+
+/*Loader*/
+#loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 25;
+}
+#circle1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px;
+    background-color: rgb(37, 55, 88);
+    transform-origin: center;
+    animation: expand 2s both ease-in-out infinite;
+}
+#circle2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px;
+    background-color: rgb(79, 112, 173);
+    transform-origin: center;
+    animation: expand 2s 0.4s both ease-in-out infinite;
+}
+#circle3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px;
+    background-color: cornflowerblue;
+    transform-origin: center;
+    animation: expand 2s 0.8s both ease-in-out infinite;
+}
+#circle5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px;
+    background-color: rgb(55, 116, 231);
+    transform-origin: center;
+    animation: expand 2s 1.2s both ease-in-out infinite;
+}
+#circle5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px;
+    background-color: rgb(13, 71, 179);
+    transform-origin: center;
+    animation: expand 2s 1.6s both ease-in-out infinite;
+}
+@keyframes expand{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(3);
+        opacity: 0%;
+    }
 }
