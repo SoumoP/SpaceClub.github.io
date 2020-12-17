@@ -896,14 +896,14 @@ body, html{
 
 /*Loader*/
 #loader{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: black;
     z-index: 25;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 #circle1{
     position: absolute;

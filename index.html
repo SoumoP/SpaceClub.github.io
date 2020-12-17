@@ -17,17 +17,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
-         
+       
         document.onreadystatechange = function() { 
             if (document.readyState !== "complete") { 
-                document.querySelector("body").style.visibility = "hidden"; 
+                document.querySelector("#full-page").style.visibility = "hidden"; 
                 document.querySelector("#loader").style.visibility = "visible"; 
+                document.querySelector("#full-page").style.overflowY = "hidden";
+                 
             } else { 
                 document.querySelector("#loader").style.display = "none"; 
-                document.querySelector("body").style.visibility = "visible"; 
+                document.querySelector("#full-page").style.visibility = "visible"; 
+                document.querySelector("#full-page").style.overflowY = "scroll"; 
+                 
             } 
-        }; 
-    </script>
+        };   </script>
 </head>
 <body>
     <div id="loader">
