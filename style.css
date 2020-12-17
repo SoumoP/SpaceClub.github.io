@@ -736,7 +736,9 @@ body, html{
         margin: 0px;
     }
     #img2{
-        width: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
         top: 130px;
     }
     #img01{
